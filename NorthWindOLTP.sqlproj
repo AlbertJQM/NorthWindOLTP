@@ -96,5 +96,12 @@
     <Build Include="Schema\Views\Current Product List.sql" />
     <Build Include="Schema\Views\Customer and Suppliers by City.sql" />
     <Build Include="Schema\Views\Invoices.sql" />
+    <Build Include="Schema\Views\Order_Details_Extended.sql" />
+    <Build Include="Schema\Views\Order_Details_Extended_WithProducts.sql" />
+    <Build Include="Schema\Views\Order_Subtotals.sql" />
+    <Build Include="Schema\Views\OrderDetails_Combinados_Extended.sql" />
+    <Build Include="Schema\Views\View_Customers.sql" />
+    <Build Include="Schema\Views\Vista_OrderDetails.sql" />
+    <Build Include="Schema\Views\Vista_Productos.sql" />
   </ItemGroup>
 </Project>
