@@ -90,5 +90,11 @@
     <Build Include="Schema\Programmability\Stored Procedures\SalesByCategory.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\SalesbyYear.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\TenMostExpensiveProducts.sql" />
+    <Build Include="Schema\Views\Alphabetical list of products.sql" />
+    <Build Include="Schema\Views\Category Sales for 1997.sql" />
+    <Build Include="Schema\Views\Product Sales for 1997.sql" />
+    <Build Include="Schema\Views\Current Product List.sql" />
+    <Build Include="Schema\Views\Customer and Suppliers by City.sql" />
+    <Build Include="Schema\Views\Invoices.sql" />
   </ItemGroup>
 </Project>
