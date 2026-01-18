@@ -1,13 +1,3 @@
-USE [NorthWindOLTP]
-GO
-
-/****** Object:  View [dbo].[OrderDetails_Combinados_Extended]    Script Date: 18/01/2026 19:33:29 ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
 -- Crear vista combinada con ExtendedPrice
 CREATE VIEW [dbo].[OrderDetails_Combinados_Extended]
 AS

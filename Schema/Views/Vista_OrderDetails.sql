@@ -1,12 +1,4 @@
-USE [NorthWindOLTP]
-GO
 
-/****** Object:  View [dbo].[Vista_OrderDetails]    Script Date: 18/01/2026 19:34:07 ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
 
 CREATE VIEW [dbo].[Vista_OrderDetails]
 AS
