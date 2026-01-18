@@ -361,3 +361,16 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+*.sqlcmdvars
+
+# SSDT / SQL Server database project
+*.dbmdl
+*.dacpac
+*.bak
+*.mdf
+*.ldf
+*.ndf
+*.sqlproj.user
+*.dbproj.user
+*.publish.sql

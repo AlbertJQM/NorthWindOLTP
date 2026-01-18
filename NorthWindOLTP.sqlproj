@@ -79,5 +79,16 @@
     <Build Include="Schema\Tables\OrderDetails.sql" />
     <Build Include="Schema\Tables\Region.sql" />
     <Build Include="Schema\Tables\Territories.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\CustOrderHist.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\CustOrdersDetail.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\CustOrdersOrders.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\EmployeeSalesbyCountry.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\GetCustomerChangesByRowVersion.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\GetDatabaseRowVersion.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\GetEmployeeChangesByRowVersion.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\GetProductChangesByRowVersion.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\SalesByCategory.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\SalesbyYear.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\TenMostExpensiveProducts.sql" />
   </ItemGroup>
 </Project>
