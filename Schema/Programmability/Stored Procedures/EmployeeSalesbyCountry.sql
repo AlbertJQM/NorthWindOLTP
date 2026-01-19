@@ -11,7 +11,7 @@ AS
 			,OS.Subtotal AS SaleAmount
 		FROM Employees E 
 			INNER JOIN (Orders O 
-						INNER JOIN [Order Subtotals] OS ON O.OrderID = OS.OrderID) 
+						INNER JOIN [Order_Subtotals] OS ON O.OrderID = OS.OrderID) 
 						ON E.EmployeeID = O.EmployeeID
 		WHERE 
 			O.ShippedDate >= @Beginning_Date 

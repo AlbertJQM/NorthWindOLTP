@@ -103,18 +103,29 @@
     <Build Include="Schema\Views\View_Customers.sql" />
     <Build Include="Schema\Views\Vista_OrderDetails.sql" />
     <Build Include="Schema\Views\Vista_Productos.sql" />
-    <Build Include="Scripts\01-insert-Customers.sql" />
-    <Build Include="Scripts\02-insert-Employees.sql" />
-    <Build Include="Scripts\03-insert-Region.sql" />
-    <Build Include="Scripts\04-insert-Territories.sql" />
-    <Build Include="Scripts\05-insert-EmployeeTerritories.sql" />
-    <Build Include="Scripts\06-insert-Shippers.sql" />
-    <Build Include="Scripts\07-insert-Suppliers.sql" />
-    <Build Include="Scripts\08-insert-Products.sql" />
-    <Build Include="Scripts\09-insert-Orders.sql" />
-    <Build Include="Scripts\10-insert-OrderDetails.sql" />
+    <Build Include="Schema\Views\Products Above Average Price.sql" />
+    <Build Include="Schema\Views\Products by Category.sql" />
+    <Build Include="Schema\Views\Quarterly Orders.sql" />
+    <Build Include="Schema\Views\Sales by Category.sql" />
+    <Build Include="Schema\Views\Sales Totals by Amount.sql" />
+    <Build Include="Schema\Views\Summary of Sales by Quarter.sql" />
+    <Build Include="Schema\Views\Summary of Sales by Year.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\00-insert-Categories.sql" />
+    <None Include="Scripts\01-insert-Customers.sql" />
+    <None Include="Scripts\02-insert-Employees.sql" />
+    <None Include="Scripts\03-insert-Region.sql" />
+    <None Include="Scripts\04-insert-Territories.sql" />
+    <None Include="Scripts\05-insert-EmployeeTerritories.sql" />
+    <None Include="Scripts\06-insert-Shippers.sql" />
+    <None Include="Scripts\07-insert-Suppliers.sql" />
+    <None Include="Scripts\08-insert-Products.sql" />
+    <None Include="Scripts\09-insert-Orders.sql" />
+    <None Include="Scripts\10-insert-OrderDetails.sql" />
+	<None Include="Scripts\clean.data.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>
