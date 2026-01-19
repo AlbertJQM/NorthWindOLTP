@@ -103,5 +103,18 @@
     <Build Include="Schema\Views\View_Customers.sql" />
     <Build Include="Schema\Views\Vista_OrderDetails.sql" />
     <Build Include="Schema\Views\Vista_Productos.sql" />
+    <Build Include="Scripts\01-insert-Customers.sql" />
+    <Build Include="Scripts\02-insert-Employees.sql" />
+    <Build Include="Scripts\03-insert-Region.sql" />
+    <Build Include="Scripts\04-insert-Territories.sql" />
+    <Build Include="Scripts\05-insert-EmployeeTerritories.sql" />
+    <Build Include="Scripts\06-insert-Shippers.sql" />
+    <Build Include="Scripts\07-insert-Suppliers.sql" />
+    <Build Include="Scripts\08-insert-Products.sql" />
+    <Build Include="Scripts\09-insert-Orders.sql" />
+    <Build Include="Scripts\10-insert-OrderDetails.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\00-insert-Categories.sql" />
   </ItemGroup>
 </Project>
