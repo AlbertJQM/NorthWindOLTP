@@ -1,6 +1,6 @@
-# NorthWindOLTP
+# NorthWind BI
 
-## GRUPO 3
+## GRUPO 4
 Este proyecto se desarrolla en el marco del módulo **Data Management and Business Intelligence** de la **Maestría en Inteligencia Artificial y Ciencia de Datos - FICCT - SOE**  de la **UNIVERSIDAD AUTÓNOMA GABRIEL RENÉ MORENO**.
 
 ### Integrantes
@@ -10,10 +10,6 @@ Este proyecto se desarrolla en el marco del módulo **Data Management and Busine
 *	VILLALTA ECHALAR FRANCO
 
 ## CONTEXTO NORTHWIND
-
-<center>
-	<img src = "https://i.ibb.co/B5f0QQW6/bd-nw.png">
-</center>
 
 La presente base de datos simula el funcionamiento de una empresa dedicada a la comercialización y distribución de productos. Permite la gestión de información relacionada con clientes, pedidos, empleados, proveedores, categorías, envíos y regiones, facilitando el análisis de procesos comerciales y el seguimiento de ventas.
 

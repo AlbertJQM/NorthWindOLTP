@@ -1,0 +1,20 @@
+﻿CREATE TABLE [stg].[Products]
+(
+	[ProductSK] INT,
+    [ProductName] NVARCHAR(40),
+
+    [CompanyName] NVARCHAR(40),
+    [City] NVARCHAR(15),
+    [Country] NVARCHAR(15),
+
+    [CategoryName] NVARCHAR(15),
+    [Description] NVARCHAR(255),
+
+    [QuantityPerUnit] NVARCHAR(20),
+    [UnitPrice] MONEY,
+    [UnitsInStock] SMALLINT,
+    [UnitsOnOrder] SMALLINT,
+    [ReorderLevel] SMALLINT,
+    [Discontinued] BIT
+)
+GO
