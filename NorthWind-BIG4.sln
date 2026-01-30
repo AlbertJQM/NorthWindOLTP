@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36908.2 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11408.102 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "NorthWind-BIG4", "NorthWind-BIG4.sqlproj", "{C8612731-ED8B-4703-9735-FE7DD3C7CBBB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ETL", "ETL", "{1FF15F88-96FF-4F50-A0C5-52F2BB9DA45B}"
@@ -28,15 +26,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C8612731-ED8B-4703-9735-FE7DD3C7CBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8612731-ED8B-4703-9735-FE7DD3C7CBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8612731-ED8B-4703-9735-FE7DD3C7CBBB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{C8612731-ED8B-4703-9735-FE7DD3C7CBBB}.Development|Any CPU.ActiveCfg = Release|Any CPU
-		{C8612731-ED8B-4703-9735-FE7DD3C7CBBB}.Development|Any CPU.Build.0 = Release|Any CPU
-		{C8612731-ED8B-4703-9735-FE7DD3C7CBBB}.Development|Any CPU.Deploy.0 = Release|Any CPU
-		{C8612731-ED8B-4703-9735-FE7DD3C7CBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8612731-ED8B-4703-9735-FE7DD3C7CBBB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8612731-ED8B-4703-9735-FE7DD3C7CBBB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{DF8C59AE-A457-4481-8E77-2549D324B459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DF8C59AE-A457-4481-8E77-2549D324B459}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF8C59AE-A457-4481-8E77-2549D324B459}.Debug|Any CPU.Deploy.0 = Debug|Any CPU

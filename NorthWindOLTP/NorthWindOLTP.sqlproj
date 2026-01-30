@@ -119,6 +119,7 @@
     <None Include="Scripts\Orders.data.sql" />
     <None Include="Scripts\OrderDetails.data.sql" />
     <None Include="Scripts\clean.data.sql" />
+    <None Include="Schema\Programmability\Stored Procedures\GetShipperChangesByRowVersion.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
