@@ -9,7 +9,7 @@
     [Country] NVARCHAR(15),
 
     [CategoryName] NVARCHAR(15),
-    [Description] NVARCHAR(255),
+    [Description] NVARCHAR(MAX),
 
     [QuantityPerUnit] NVARCHAR(20),
     [UnitPrice] MONEY,
@@ -17,5 +17,5 @@
     [UnitsOnOrder] SMALLINT,
     [ReorderLevel] SMALLINT,
     [Discontinued] BIT
-)
+) TEXTIMAGE_ON [PRIMARY];
 GO

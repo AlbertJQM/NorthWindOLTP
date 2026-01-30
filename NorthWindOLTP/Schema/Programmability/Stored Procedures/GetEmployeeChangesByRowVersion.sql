@@ -17,10 +17,8 @@ AS
 			,e.[Country]
 			,e.[HomePhone]
 			,e.[Extension]
-			,e.[Photo]
 			,e.[Notes]
 			,e.[ReportsTo]
-			,e.[PhotoPath]
 			,t.[TerritoryDescription]
 			,r.[RegionDescription]
 	  FROM [dbo].[Employees] e

@@ -65,9 +65,9 @@
     <Folder Include="Schema\Views" />
   </ItemGroup>
   <ItemGroup>
+	<Build Include="Schema\Tables\dbo\Categories.sql" />
     <Build Include="Schema\Tables\dbo\Customers.sql" />
     <Build Include="Schema\Tables\dbo\Suppliers.sql" />
-    <Build Include="Schema\Tables\dbo\Categories.sql" />
     <Build Include="Schema\Tables\dbo\Products.sql" />
     <Build Include="Schema\Tables\dbo\Orders.sql" />
     <Build Include="Schema\Tables\dbo\Employees.sql" />
@@ -102,6 +102,7 @@
     <Build Include="Schema\Programmability\Stored Procedures\GetDatabaseRowVersion.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\GetEmployeeChangesByRowVersion.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\GetProductChangesByRowVersion.sql" />
+	<Build Include="Schema\Programmability\Stored Procedures\GetShipperChangesByRowVersion.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\SalesByCategory.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\SalesbyYear.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\TenMostExpensiveProducts.sql" />
@@ -119,7 +120,6 @@
     <None Include="Scripts\Orders.data.sql" />
     <None Include="Scripts\OrderDetails.data.sql" />
     <None Include="Scripts\clean.data.sql" />
-    <None Include="Schema\Programmability\Stored Procedures\GetShipperChangesByRowVersion.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
