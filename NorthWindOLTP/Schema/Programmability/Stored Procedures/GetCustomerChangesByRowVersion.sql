@@ -14,8 +14,6 @@ AS
             ,c.[Country]
             ,c.[Phone]
             ,c.[Fax]
-            ,c.[rowversion]
-            ,g.[CustomerDesc]
         FROM 
             [dbo].[Customers] c
             LEFT JOIN [dbo].[CustomerCustomerDemo] d ON c.CustomerID=d.CustomerID
