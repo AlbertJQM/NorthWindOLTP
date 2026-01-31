@@ -1,18 +1,20 @@
 ﻿CREATE TABLE [stg].[Orders]
 (
-	[OrderID] INT,
-    [ProductSK] INT,
-    [CustomerSK] NCHAR(5),
-    [EmployeeSK] INT,
-    [ShipperSK] INT,
+	[OrderID] INT NOT NULL,
+    [ProductID] INT NOT NULL,
+    [ProductSK] INT NOT NULL,
+    [CustomerSK] NCHAR(5) NOT NULL,
+    [EmployeeSK] INT NOT NULL,
+    [ShipperSK] INT NOT NULL,
 
     [OrderDateKey] INT NOT NULL,
     [RequiredDateKey] INT NOT NULL,
-    [ShippedDateKey] INT NULL,
+    [ShippedDateKey] INT NOT NULL,
 
     [OrderDate] DATE,
     [RequiredDate] DATE,
     [ShippedDate] DATE,
+
     [Freight] MONEY,
 
     [UnitPrice] MONEY,

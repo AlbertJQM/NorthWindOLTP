@@ -38,9 +38,9 @@ BEGIN
                     RIGHT('0' + CONVERT(VARCHAR(2), DATEPART(DAY, o.ShippedDate)), 2)
                 )
             END,
-        o.OrderDate,
-        o.RequiredDate,
-        o.ShippedDate,
+        OrderDate = CONVERT(DATE, o.OrderDate),
+        RequiredDate = CONVERT(DATE, o.RequiredDate),
+        ShippedDate = CONVERT(DATE, o.ShippedDate),
         o.Freight,
         o.ShipName,
         o.ShipAddress,

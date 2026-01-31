@@ -1,19 +1,21 @@
 ﻿CREATE TABLE [dw].[FactOrders]
 (
 	[OrderID] INT NOT NULL,
-    [ProductSK] INT NOT NULL,
+    [ProductID] INT NOT NULL,
+    [ProductSK] INT,
     [CustomerSK] INT,
     [EmployeeSK] INT,
     [ShipperSK] INT,
 
-    [OrderDateKey] INT NOT NULL,
-    [RequiredDateKey] INT NOT NULL,
+    [OrderDateKey] INT NULL,
+    [RequiredDateKey] INT NULL,
     [ShippedDateKey] INT NULL,
-    [OrderDate] DATETIME NULL,
-    [RequiredDate] DATETIME NULL,
-    [ShippedDate] DATETIME NULL,
-    [Freight] MONEY,
 
+    [OrderDate] DATE NULL,
+    [RequiredDate] DATE NULL,
+    [ShippedDate] DATE NULL,
+    
+    [Freight] MONEY,
     [UnitPrice] MONEY,
     [Quantity] SMALLINT,
     [Discount] REAL,
@@ -25,7 +27,7 @@
     [ShipPostalCode] NVARCHAR(10),
     [ShipCountry] NVARCHAR(15),
 
-    CONSTRAINT PK_FactOrders PRIMARY KEY ([OrderID], [ProductSK]),
+    CONSTRAINT PK_FactOrders PRIMARY KEY ([OrderID], [ProductID]),
     CONSTRAINT FK_Fact_Product
         FOREIGN KEY ([ProductSK]) REFERENCES [dw].[DimProduct]([ProductSK]),
     CONSTRAINT FK_Fact_Customer
