@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="DimCustomer"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{20F62E9C-2060-4A23-AF28-9E46AA4EDB1E}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{A413A36F-26CE-4737-8630-24D753E0BE62}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1205,6 +1205,10 @@ where [refTable].[CustomerID] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="159,42"
+          Id="Package\Clean-up Staging"
+          TopLeft="481,171" />
+        <NodeLayout
           Size="201,42"
           Id="Package\Get Database RowVersion"
           TopLeft="458,25" />
@@ -1212,6 +1216,18 @@ where [refTable].[CustomerID] = ?</property>
           Size="173,42"
           Id="Package\Get LastRowVersion"
           TopLeft="474,96" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Load Customers"
+          TopLeft="489,252" />
+        <NodeLayout
+          Size="140,42"
+          Id="Package\Sync Staging"
+          TopLeft="497,323" />
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Update LastRowVersion"
+          TopLeft="471,399" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="559.5,67">
@@ -1234,10 +1250,6 @@ where [refTable].[CustomerID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Clean-up Staging"
-          TopLeft="481,171" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
           TopLeft="560.5,138">
@@ -1260,10 +1272,6 @@ where [refTable].[CustomerID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Load Customers"
-          TopLeft="489,252" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
           TopLeft="563.5,213">
@@ -1286,10 +1294,6 @@ where [refTable].[CustomerID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="140,42"
-          Id="Package\Sync Staging"
-          TopLeft="497,323" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
           TopLeft="566.75,294">
@@ -1312,10 +1316,6 @@ where [refTable].[CustomerID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="190,42"
-          Id="Package\Update LastRowVersion"
-          TopLeft="471,399" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
           TopLeft="566.5,365">
@@ -1347,13 +1347,21 @@ where [refTable].[CustomerID] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="148,42"
-          Id="Package\Load Customers\Get Customers"
-          TopLeft="464,25" />
+          Size="140,42"
+          Id="Package\Load Customers\Load Staging"
+          TopLeft="347,175" />
         <NodeLayout
           Size="113,42"
           Id="Package\Load Customers\Lookup"
           TopLeft="476,100" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Load Customers\Add New Customers"
+          TopLeft="604,175" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\Load Customers\Get Customers"
+          TopLeft="464,25" />
         <EdgeLayout
           Id="Package\Load Customers.Paths[Salida de origen de OLE DB]"
           TopLeft="535.25,67">
@@ -1376,10 +1384,6 @@ where [refTable].[CustomerID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Load Customers\Add New Customers"
-          TopLeft="604,175" />
         <EdgeLayout
           Id="Package\Load Customers.Paths[Salida de entradas no coincidentes de búsqueda]"
           TopLeft="550,142">
@@ -1416,43 +1420,39 @@ where [refTable].[CustomerID] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="140,42"
-          Id="Package\Load Customers\Load Staging"
-          TopLeft="348,176" />
         <EdgeLayout
           Id="Package\Load Customers.Paths[Salida de entradas coincidentes de búsqueda]"
           TopLeft="515,142">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-97,34"
+              EndConnector="-98,33"
               Start="0,0"
-              End="-97,26.5">
+              End="-98,25.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,9.8848167539267" />
+                    End="0,9.47643979057592" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,9.8848167539267"
-                    Point2="0,13.8848167539267"
-                    Point3="-4,13.8848167539267" />
+                    Point1="0,9.47643979057592"
+                    Point2="0,13.4764397905759"
+                    Point3="-4,13.4764397905759" />
                   <mssgle:LineSegment
-                    End="-93,13.8848167539267" />
+                    End="-94,13.4764397905759" />
                   <mssgle:CubicBezierSegment
-                    Point1="-93,13.8848167539267"
-                    Point2="-97,13.8848167539267"
-                    Point3="-97,17.8848167539267" />
+                    Point1="-94,13.4764397905759"
+                    Point2="-98,13.4764397905759"
+                    Point3="-98,17.4764397905759" />
                   <mssgle:LineSegment
-                    End="-97,26.5" />
+                    End="-98,25.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-148.3190234375,18.8848167539267,199.638046875,12.1953125"
+              BoundingBox="-148.8190234375,18.4764397905759,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -1460,10 +1460,15 @@ where [refTable].[CustomerID] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Customers\Get Customers">
+    design-time-name="Package\Load Customers\Load Staging">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -1504,15 +1509,10 @@ where [refTable].[CustomerID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Customers\Load Staging">
+    design-time-name="Package\Load Customers\Get Customers">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

@@ -17,8 +17,8 @@ AS
 			,p.[ReorderLevel]
 			,p.[Discontinued]
 		FROM [dbo].[Products] p
-			LEFT JOIN [dbo].[Categories] c ON p.CategoryID = c.CategoryID
-			LEFT JOIN [dbo].[Suppliers] s ON p.SupplierID = s.SupplierID
+			INNER JOIN [dbo].[Categories] c ON p.CategoryID = c.CategoryID
+			INNER JOIN [dbo].[Suppliers] s ON p.SupplierID = s.SupplierID
 		WHERE 
 			(p.[rowversion] > CONVERT(ROWVERSION,@startRow) AND p.[rowversion] <= CONVERT(ROWVERSION,@endRow))
 			OR (c.[rowversion] > CONVERT(ROWVERSION,@startRow)	AND c.[rowversion] <= CONVERT(ROWVERSION,@endRow))

@@ -22,9 +22,9 @@ AS
 			,t.[TerritoryDescription]
 			,r.[RegionDescription]
 	  FROM [dbo].[Employees] e
-		  LEFT JOIN [dbo].[EmployeeTerritories] et ON e.EmployeeID=et.EmployeeID
-		  LEFT JOIN [dbo].[Territories] t ON et.TerritoryID=t.TerritoryID
-		  LEFT JOIN [dbo].[Region] r ON t.RegionID=r.RegionID
+		  INNER JOIN [dbo].[EmployeeTerritories] et ON e.EmployeeID=et.EmployeeID
+		  INNER JOIN [dbo].[Territories] t ON et.TerritoryID=t.TerritoryID
+		  INNER JOIN [dbo].[Region] r ON t.RegionID=r.RegionID
 	  WHERE 
 		  (e.[rowversion] > CONVERT(ROWVERSION,@startRow) AND e.[rowversion] <= CONVERT(ROWVERSION,@endRow))
 		  OR (et.[rowversion] > CONVERT(ROWVERSION,@startRow) AND et.[rowversion] <= CONVERT(ROWVERSION,@endRow))

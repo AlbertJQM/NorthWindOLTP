@@ -11,8 +11,8 @@
   DTS:LocaleID="16394"
   DTS:ObjectName="DimShipper"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{AB87D14A-23D0-43C4-9E66-A0CF3FBFDC7C}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{B61C582B-6175-46A1-91F2-BEC0AAB0033D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -523,7 +523,7 @@
                   expressionType="Notify"
                   name="SqlCommandParam"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dw].[DimShipper]) [refTable]
-where [refTable].[ShipperSK] = ?</property>
+where [refTable].[ShipperID] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -590,11 +590,11 @@ where [refTable].[ShipperSK] = ?</property>
                       <properties>
                         <property
                           dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">ShipperSK</property>
+                          description="Especifica la columna de la tabla de referencia con la que se combina una columna."
+                          name="JoinToReferenceColumn">ShipperID</property>
                         <property
                           dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
                           name="CopyFromReferenceColumn" />
                       </properties>
                     </inputColumn>
@@ -613,14 +613,14 @@ where [refTable].[ShipperSK] = ?</property>
                     <outputColumn
                       refId="Package\Add New Shippers\Lookup.Outputs[Lookup Match Output].Columns[ShipperSK]"
                       dataType="i4"
-                      errorOrTruncationOperation="Copy Column"
+                      errorOrTruncationOperation="Copiar columna"
                       lineageId="Package\Add New Shippers\Lookup.Outputs[Lookup Match Output].Columns[ShipperSK]"
                       name="ShipperSK"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
                           name="CopyFromReferenceColumn">ShipperSK</property>
                       </properties>
                     </outputColumn>
@@ -842,7 +842,7 @@ where [refTable].[ShipperSK] = ?</property>
           Id="Package\Add New Shippers"
           TopLeft="228.333320857751,330.199997703831" />
         <NodeLayout
-          Size="202,42"
+          Size="201,42"
           Id="Package\Get Database RowVersion"
           TopLeft="217.499988116324,97.0666659916772" />
         <NodeLayout
@@ -863,18 +863,18 @@ where [refTable].[ShipperSK] = ?</property>
           TopLeft="225.833320994344,518.666664472951" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="320.366654691928,138.666665991677">
+          TopLeft="320.166654691928,139.066665991677">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32.9333328150377"
+              EndConnector="0,32.5333328150378"
               Start="0,0"
-              End="0,25.4333328150377">
+              End="0,25.0333328150378">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.4333328150377" />
+                    End="0,25.0333328150378" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1142,7 +1142,7 @@ where [refTable].[ShipperSK] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -1152,7 +1152,7 @@ where [refTable].[ShipperSK] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

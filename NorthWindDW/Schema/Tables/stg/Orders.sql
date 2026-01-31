@@ -6,6 +6,10 @@
     [EmployeeSK] INT,
     [ShipperSK] INT,
 
+    [OrderDateKey] INT NOT NULL,
+    [RequiredDateKey] INT NOT NULL,
+    [ShippedDateKey] INT NULL,
+
     [OrderDate] DATE,
     [RequiredDate] DATE,
     [ShippedDate] DATE,

@@ -8,6 +8,9 @@ BEGIN
 		,[OrderDateKey] = CONVERT(INT, FORMAT(sc.[OrderDate], 'yyyyMMdd'))
 		,[RequiredDateKey] = CONVERT(INT, FORMAT(sc.[RequiredDate], 'yyyyMMdd'))
 		,[ShippedDateKey] = CONVERT(INT, FORMAT(sc.[ShippedDate], 'yyyyMMdd'))
+		,[OrderDate] = sc.[OrderDate]
+		,[RequiredDate] = sc.[RequiredDate]
+		,[ShippedDate] = sc.[ShippedDate]
 		,[Freight] = sc.[Freight]
 		,[UnitPrice] = sc.[UnitPrice]
 		,[Quantity] = sc.[Quantity]

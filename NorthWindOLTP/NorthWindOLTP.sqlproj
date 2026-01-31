@@ -65,7 +65,7 @@
     <Folder Include="Schema\Views" />
   </ItemGroup>
   <ItemGroup>
-	<Build Include="Schema\Tables\dbo\Categories.sql" />
+    <Build Include="Schema\Tables\dbo\Categories.sql" />
     <Build Include="Schema\Tables\dbo\Customers.sql" />
     <Build Include="Schema\Tables\dbo\Suppliers.sql" />
     <Build Include="Schema\Tables\dbo\Products.sql" />
@@ -102,10 +102,11 @@
     <Build Include="Schema\Programmability\Stored Procedures\GetDatabaseRowVersion.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\GetEmployeeChangesByRowVersion.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\GetProductChangesByRowVersion.sql" />
-	<Build Include="Schema\Programmability\Stored Procedures\GetShipperChangesByRowVersion.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\GetShipperChangesByRowVersion.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\SalesByCategory.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\SalesbyYear.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\TenMostExpensiveProducts.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\GetOrdersChangesByRowVersion.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\Categories.data.sql" />

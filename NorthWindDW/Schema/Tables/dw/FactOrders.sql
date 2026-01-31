@@ -9,7 +9,9 @@
     [OrderDateKey] INT NOT NULL,
     [RequiredDateKey] INT NOT NULL,
     [ShippedDateKey] INT NULL,
-
+    [OrderDate] DATETIME NULL,
+    [RequiredDate] DATETIME NULL,
+    [ShippedDate] DATETIME NULL,
     [Freight] MONEY,
 
     [UnitPrice] MONEY,
