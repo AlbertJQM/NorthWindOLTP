@@ -761,12 +761,8 @@
             "expression": " AVERAGE(Orders[Discount])"
           },
           {
-            "name": "WeightedDiscount",
-            "expression": " [TotalDiscountSales] / [TotalGrossSales]"
-          },
-          {
             "name": "AVGProductsOrder",
-            "expression": " [TotalQuantity] / [TotalOrders]"
+            "expression": " DIVIDE([TotalQuantity],[TotalOrders])"
           }
         ]
       }
